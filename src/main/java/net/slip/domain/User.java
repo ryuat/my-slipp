@@ -16,6 +16,8 @@ public class User {
 		
 		@Column(nullable=false, length=20)
 		private String userId;
+		
+		
 		private String userPassword;
 		private String userName;
 		private String userEmail;
