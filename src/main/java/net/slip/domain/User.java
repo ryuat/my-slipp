@@ -1,9 +1,20 @@
-package net.slip.web;
+package net.slip.domain;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 import org.springframework.web.bind.annotation.GetMapping;
 
+@Entity
 public class User {
 
+		@Id
+		@GeneratedValue // auto increment
+		private Long id;
+		
+		@Column(nullable=false, length=20)
 		private String userId;
 		private String userPassword;
 		private String userName;
