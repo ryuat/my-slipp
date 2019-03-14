@@ -50,4 +50,16 @@ public class User {
 		public String toString() {
 			return "User [userId=" + userId + ", userPassword=" + userPassword + ", userName=" + userName + ", userEmail=" + userEmail + "]";
 		}
+		public Long getId() {
+			return id;
+		}
+		public void setId(Long id) {
+			this.id = id;
+		}
+		
+		public void update(User updateUser) {
+			this.userPassword = updateUser.userPassword;
+			this.userName = updateUser.userName;
+			this.userEmail = updateUser.userEmail;
+		}
 }
