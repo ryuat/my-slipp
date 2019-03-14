@@ -10,4 +10,5 @@ public class MySlippApplication {
 		SpringApplication.run(MySlippApplication.class, args);
 	}
 
+
 }
